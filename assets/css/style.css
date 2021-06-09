@@ -77,14 +77,14 @@ body
     margin-top: 20px;
     text-transform: capitalize;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.4em;
 }
 
 .profileText h2 span
 {
     font-size: 0.6em;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .contactInfo
@@ -136,13 +136,13 @@ body
 .contactInfo.education h5
 {
     color: #03a9f4;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .contactInfo.education h4
 {
     color: #fff;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .contactInfo.languag .percent
@@ -197,14 +197,15 @@ p
 
 .about .box
 {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .about .box .year_company
 {
     min-width: 150px;
+    
 
 }
 
@@ -212,7 +213,7 @@ p
 {
     text-transform: uppercase;
     color: #848c90;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .about .box .text h4
@@ -235,7 +236,7 @@ p
 {
     text-transform: uppercase;
     color: #848c84;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .skills .box .percent
@@ -267,7 +268,7 @@ p
 {
     list-style: none;
     color: #333;
-    font-weight: 500;
+    font-weight: 100;
     margin: 10px 0;
 }
 
@@ -277,4 +278,38 @@ p
     color:#03a9f4;
     font-size: 18px;
     width: 30px;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: row;
+    }
+    .about .box .year_company
+    {   
+        margin-bottom: 5px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
 }
